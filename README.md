@@ -26,3 +26,15 @@ For installation and usage, read the comments in cool_gpu.
   | 85%   66C    P2   151W / 250W |   2983MiB / 12066MiB |    100%      Default |
   +-------------------------------+----------------------+----------------------+
 ```
+
+https://towardsdatascience.com/burning-gpu-while-training-dl-model-these-commands-can-cool-it-down-9c658b31c171
+
+```
+sudo apt install tcsh
+cd /opt
+sudo git clone https://github.com/boris-dimitrov/set_gpu_fans_public
+sudo mv set_gpu_fans_public set-gpu-fans
+cd /opt/set-gpu-fans
+sudo tcsh
+./cool_gpu
+```
